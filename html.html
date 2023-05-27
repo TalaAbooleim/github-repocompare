@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css.css">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
+    <link rel="icon" type="image/png" href="/assets/github.svg" />
+    <link rel="stylesheet" href="css.css" />
+    <title>gitHub Finder</title>
+    
+</head>
+<body>
+    <header>
+      <!-- icon for git  hup -->
+        <nav>
+          <button id="mode">
+            <svg
+              xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#fff" class="bi bi-github" viewBox="0 0 16 16" id="github"
+            >
+              <path
+                d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"
+              />
+            </svg>
+          </button>
+          <!--  -->
+          <!-- search input &submit   -->
+          <form action="javascript:void(0)" id="inputPart">
+            <input type="text" placeholder="Search or jump to" id="input" />
+            <input
+              type="submit"
+              id="search"
+              value="Search"
+              placeholder="search"
+            />
+          </form>
+          <!--  -->
+
+          <!-- profile find &who is the winner? -->
+          <div id="list">
+            <ul id="myList">
+              <li class="firstNav"><a href="html.html">pull requests</a></li>
+              <li class="firstNav"><a href="html.html">Isuues</a></li>
+              <li class="firstNav"><a href="html.html">codespace</a></li>
+              <li class="firstNav"><a href="html.html">explore</a></li>
+              
+              <li class="firstNav">
+                <a href="html1.html">compartion?</a>
+              </li>
+            </ul>
+            <button id="menuIcon">
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
+          </div>
+          <div class="endnav">
+            <div class="bell">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bell" viewBox="0 0 16 16">
+              <path d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2zM8 1.918l-.797.161A4.002 4.002 0 0 0 4 6c0 .628-.134 2.197-.459 3.742-.16.767-.376 1.566-.663 2.258h10.244c-.287-.692-.502-1.49-.663-2.258C12.134 8.197 12 6.628 12 6a4.002 4.002 0 0 0-3.203-3.92L8 1.917zM14.22 12c.223.447.481.801.78 1H1c.299-.199.557-.553.78-1C2.68 10.2 3 6.88 3 6c0-2.42 1.72-4.44 4.005-4.901a1 1 0 1 1 1.99 0A5.002 5.002 0 0 1 13 6c0 .88.32 4.2 1.22 6z"/>
+            </svg>
+            </div>
+            <div class="plus" >
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-lg" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2Z"/>
+              </svg>
+            </div>
+            <div class="imgggithub">
+            <img src="Screenshot 2023-05-27 160804.png">
+            </div>
+          </div>
+          </div>
+          <!--end div  -->
+        </nav>
+          </div>
+        <!-- End the nav -->
+      </header>
+      <!-- end the header -->
+      <header>
+        <div class="detaills">
+          <div class="detail">
+            <ul>
+              <li>
+                <svg
+            aria-hidden="true"
+            height="16"
+            viewBox="0 0 16 16"
+            version="1.1"
+            width="16"
+            data-view-component="true"
+            class="octicon octicon-book UnderlineNav-octicon hide-sm"
+          >
+            <path
+              d="M0 1.75A.75.75 0 0 1 .75 1h4.253c1.227 0 2.317.59 3 1.501A3.743 3.743 0 0 1 11.006 1h4.245a.75.75 0 0 1 .75.75v10.5a.75.75 0 0 1-.75.75h-4.507a2.25 2.25 0 0 0-1.591.659l-.622.621a.75.75 0 0 1-1.06 0l-.622-.621A2.25 2.25 0 0 0 5.258 13H.75a.75.75 0 0 1-.75-.75Zm7.251 10.324.004-5.073-.002-2.253A2.25 2.25 0 0 0 5.003 2.5H1.5v9h3.757a3.75 3.75 0 0 1 1.994.574ZM8.755 4.75l-.004 7.322a3.752 3.752 0 0 1 1.992-.572H14.5v-9h-3.495a2.25 2.25 0 0 0-2.25 2.25Z"
+            ></path>
+          </svg>overview
+                
+              </li>
+              <li>
+                <svg
+            aria-hidden="true"
+            height="16"
+            viewBox="0 0 16 16"
+            version="1.1"
+            width="16"
+            data-view-component="true"
+            class="octicon octicon-repo UnderlineNav-octicon hide-sm"
+          >
+            <path
+              d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.714 1.7.75.75 0 1 1-1.072 1.05A2.495 2.495 0 0 1 2 11.5Zm10.5-1h-8a1 1 0 0 0-1 1v6.708A2.486 2.486 0 0 1 4.5 9h8ZM5 12.25a.25.25 0 0 1 .25-.25h3.5a.25.25 0 0 1 .25.25v3.25a.25.25 0 0 1-.4.2l-1.45-1.087a.249.249 0 0 0-.3 0L5.4 15.7a.25.25 0 0 1-.4-.2Z"
+            ></path>
+          </svg>Repositories</li>
+              <li>
+                <svg
+            aria-hidden="true"
+            height="16"
+            viewBox="0 0 16 16"
+            version="1.1"
+            width="16"
+            data-view-component="true"
+            class="octicon octicon-table UnderlineNav-octicon hide-sm"
+          >
+            <path
+              d="M0 1.75C0 .784.784 0 1.75 0h12.5C15.216 0 16 .784 16 1.75v12.5A1.75 1.75 0 0 1 14.25 16H1.75A1.75 1.75 0 0 1 0 14.25ZM6.5 6.5v8h7.75a.25.25 0 0 0 .25-.25V6.5Zm8-1.5V1.75a.25.25 0 0 0-.25-.25H6.5V5Zm-13 1.5v7.75c0 .138.112.25.25.25H5v-8ZM5 5V1.5H1.75a.25.25 0 0 0-.25.25V5Z"
+            ></path>
+          </svg>project</li>
+              <li>
+                <svg
+            aria-hidden="true"
+            height="16"
+            viewBox="0 0 16 16"
+            version="1.1"
+            width="16"
+            data-view-component="true"
+            class="octicon octicon-package UnderlineNav-octicon hide-sm"
+          >
+            <path
+              d="m8.878.392 5.25 3.045c.54.314.872.89.872 1.514v6.098a1.75 1.75 0 0 1-.872 1.514l-5.25 3.045a1.75 1.75 0 0 1-1.756 0l-5.25-3.045A1.75 1.75 0 0 1 1 11.049V4.951c0-.624.332-1.201.872-1.514L7.122.392a1.75 1.75 0 0 1 1.756 0ZM7.875 1.69l-4.63 2.685L8 7.133l4.755-2.758-4.63-2.685a.248.248 0 0 0-.25 0ZM2.5 5.677v5.372c0 .09.047.171.125.216l4.625 2.683V8.432Zm6.25 8.271 4.625-2.683a.25.25 0 0 0 .125-.216V5.677L8.75 8.432Z"
+            ></path>
+          </svg>package</li>
+              <li><svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-star UnderlineNav-octicon hide-sm">
+                <path d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.751.751 0 0 1-1.088.791L8 12.347l-3.766 1.98a.75.75 0 0 1-1.088-.79l.72-4.194L.818 6.374a.75.75 0 0 1 .416-1.28l4.21-.611L7.327.668A.75.75 0 0 1 8 .25Zm0 2.445L6.615 5.5a.75.75 0 0 1-.564.41l-3.097.45 2.24 2.184a.75.75 0 0 1 .216.664l-.528 3.084 2.769-1.456a.75.75 0 0 1 .698 0l2.77 1.456-.53-3.084a.75.75 0 0 1 .216-.664l2.24-2.183-3.096-.45a.75.75 0 0 1-.564-.41L8 2.694Z"></path>
+            </svg>Stars</li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <hr>
+      <!-- main for image&name of user -->
+      <main id="main">
+        <div id="profile">
+          <div id="nameImage">
+            <img src="/assets/white.jpg" alt="" id="userImage" />
+            <div id="profileData">
+              <div id="names">
+                <h3 id="login">User Name</h3>
+                <h6 id="name">name Of user</h6>
+                <p id="bio">Bio Of user</p>
+              </div>
+            </div>
+          </div>
+          <!--  -->
+          <!-- button for follow -->
+          <button id="followBtn">Follow</button>
+          <!-- followes and following -->
+          <div id="follow">
+            <div id="followers">
+              0
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-person"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0Zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4Zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10Z"
+                />
+              </svg>
+              Followers
+            </div>
+            <div id="following">
+              0
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-person"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0Zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4Zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10Z"
+                />
+              </svg>
+              Following
+            </div>
+          </div>
+          <!--  -->
+          <!-- details companyEmail& location -->
+          <div id="details">
+            <div id="copmany">Company</div>
+            <div id="email">Email</div>
+            <div id="location">Location</div>
+          </div>
+          <!--  -->
+        </div>
+        
+        <!-- repo container -->
+        <div id="repoContainer">
+          <div class="repodata">
+            <div class="repoName">
+              <div class="nameofProject">HTML task</div>
+              <div class="visibility">Public</div>
+            </div>
+            <div class="description">
+              
+            </div>
+            <div class="language">
+              <div class="circle"></div>
+              <p class="lang">HTML</p>
+            </div>
+          </div>
+          <div class="repodata">
+            <div class="repoName">
+              <div class="nameofProject">HTML task</div>
+              <div class="visibility">Public</div>
+            </div>
+            <div class="description">
+              
+            </div>
+            <div class="language">
+              <div class="circle"></div>
+              <p class="lang">HTML</p>
+            </div>
+          </div>
+          
+          <div class="repodata">
+            <div class="repoName">
+              <div class="nameofProject">HTML task</div>
+              <div class="visibility">Public</div>
+            </div>
+            <div class="description">
+              
+            </div>
+            <div class="language">
+              <div class="circle"></div>
+              <p class="lang">HTML</p>
+            </div>
+          </div>
+          <div class="repodata">
+            <div class="repoName">
+              <div class="nameofProject">HTML task</div>
+              <div class="visibility">Public</div>
+            </div>
+            <div class="description">
+              
+            </div>
+            <div class="language">
+              <div class="circle"></div>
+              <p class="lang">HTML</p>
+            </div>
+          </div>
+          <div class="repodata">
+            <div class="repoName">
+              <div class="nameofProject">HTML task</div>
+              <div class="visibility">Public</div>
+            </div>
+            <div class="description">
+              
+            </div>
+            <div class="language">
+              <div class="circle"></div>
+              <p class="lang">HTML</p>
+            </div>
+          </div>
+          <div class="repodata">
+            <div class="repoName">
+              <div class="nameofProject">HTML task</div>
+              <div class="visibility">Public</div>
+            </div>
+            <div class="description">
+              
+            </div>
+            <div class="language">
+              <div class="circle"></div>
+              <p class="lang">HTML</p>
+            </div>
+          </div>
+        </div>
+        <!-- end repo container  -->
+        <!-- end main -->
+      </main>
+      <hr>
+      <footer>
+        <div class="foot">
+        <div class="imageC">
+          <img class="img" src="R (1).jpeg">
+          <p>Github.INc</p>
+
+        </div>
+        <div class="infofooter">
+        <ul>
+          <li>
+            terms
+          </li>
+          <li>privacy</li>
+          <li>Security</li>
+          <li>Ststus</li>
+          <li>Docs</li>
+          <li>contactGithub</li>
+          <li>pricing</li>
+          <li>API</li>
+          <li>Training</li>
+          <li>blog</li>
+          <li>
+            About
+          </li>
+        </ul>
+      </div>
+    </div>
+      </footer>
+
+    <script src="java.js"> </script>
+    <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+    crossorigin="anonymous"
+  ></script>
+</body>
+</html>
